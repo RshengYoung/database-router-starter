@@ -1,0 +1,13 @@
+tenant: com.rshenghub
+idle-timeout: 5m # 5分鐘
+datasource:
+  driverClassName: org.postgresql.Driver
+  jdbcUrl: jdbc:postgresql://localhost:5432/dsp_rshenghub_com
+  username: rshenghub
+  password: rshenghub
+  maximumPoolSize: 5
+  minimumIdle: 0
+  idleTimeout: 60000
+  # max-lifetime: 60000
+  connectionTimeout: 30000
+  autoCommit: true

@@ -1,0 +1,21 @@
+# server:
+#   port: 8080
+
+spring:
+  jpa:
+    properties.hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      enable_lazy_load_no_trans: true
+      show-sql: false
+      format-sql: false
+      jdbc:
+        fetch-size: 100
+        batch-size: 100
+        batch-versioned-data: true
+      order_inserts: true
+      order_updates: true
+      ddl-auto: validate
+
+logging:
+  com.rshenghub: INFO
+  com.zaxxer.hikari: ERROR
